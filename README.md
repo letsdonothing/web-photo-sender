@@ -1,21 +1,20 @@
-# webphoto
+# Web photo sender
 
-> A Vue.js project
+The first part of internship task.
 
-## Build Setup
++ Go to [website](https://letsdonothing.github.io/web-photo-sender/) and take a photo
++ If you have installed the application from [second part](https://github.com/letsdonothing/ios-photo-receiver), then it will open with your photo
 
-``` bash
-# install dependencies
-npm install
+## Requirements
 
-# serve with hot reload at localhost:8080
-npm run dev
++ **npm** and **node.js** installed
 
-# build for production with minification
-npm run build
+## Doesn't work correctly
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
++ Any OS except iOS (and iOS without app installed) just displays your photo without having to go to the application (obviously, yes?)
++ iOS doesn't even display camera stream via any browser other than Safari
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## To do
+
++ Checking URL and force to do nothing if something goes wrong (Safari in iOS displays an error if you don't have the application)
++ Add support for *Universal links*
